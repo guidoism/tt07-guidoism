@@ -39,6 +39,7 @@ module tt_um_guidoism (
 
    wire [63:0]        a;
    assign a[7:0] = ui_in;
+   assign a[63:8] = 0; // We don't have enough pins to set these so they get a zero
    
    wire [5:0]        n;
    wire              direction;
