@@ -44,6 +44,7 @@ module tt_um_guidoism (
    wire              direction;
    wire              invert;
    wire              shift_in;
+   assign uio_out = 0;
    assign uio_oe = 0;
    assign n[4:0] = uio_in[4:0];
    assign n[5] = 0;
