@@ -44,9 +44,8 @@ module tt_um_guidoism (
    //assign address[7:0] = uo_out[7:0];
    //assign address[10:8] = 0;
    //assign uo_out = 0;  // temporarily set to 0 while I figure stuff out
-   assign data = 0;
-   assign address = 0;  // temporarily set to 0 while I figure stuff out
-   
+   //assign data = 0;
+   //assign address = 0;  // temporarily set to 0 while I figure stuff out
    ////////////////////////////////////////////////////////////////
    
    parameter FETCH0=0, FETCH1=1, RDMEM=2, RDMEM2=3, EXEC=4 ;
