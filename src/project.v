@@ -17,9 +17,9 @@ module tt_um_guidoism (
 );
 
   // All output pins must be assigned. If not used, assign to 0.
-  //assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
-  //assign uio_out = 0;
-  //assign uio_oe  = 0;
+  assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
+  assign uio_out = 0;
+  assign uio_oe  = 0;
 
   //module opccpu(inout[7:0] data, output[10:0] address, output rnw, input clk, input reset_b);
 
@@ -38,12 +38,13 @@ module tt_um_guidoism (
    wire [7:0]         data;
    wire [10:0]        address;
    wire               rnw;
-   assign data = rnw ? uo_out : ui_in;
-   assign uio_oe = rnw;
-   assign uio_out = 0;  // temporarily set to 0 while I figure stuff out
+   //assign data = rnw ? uo_out : ui_in;
+   //assign uio_oe = rnw;
+   //assign uio_out = 0;  // temporarily set to 0 while I figure stuff out
    //assign address[7:0] = uo_out[7:0];
    //assign address[10:8] = 0;
-   assign uo_out = 0;  // temporarily set to 0 while I figure stuff out
+   //assign uo_out = 0;  // temporarily set to 0 while I figure stuff out
+   assign data = 0;
    assign address = 0;  // temporarily set to 0 while I figure stuff out
    
    ////////////////////////////////////////////////////////////////
