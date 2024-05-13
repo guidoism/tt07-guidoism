@@ -55,7 +55,7 @@ module tt_um_guidoism (
    
    wire overflow;
    wire [63:0] s;
-   assign s[7:0] = uo_out;
+   assign uo_out = s[7:0];
    
     wire const_0_0;
     wire const_1_0;
