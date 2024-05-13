@@ -92,7 +92,6 @@ module tt_um_guidoism (
     wire[63:0] shift_8;
     wire[63:0] shift_16;
     wire[63:0] shift_32;
-    wire shift_in;
     wire shift_off_1;
     wire[1:0] shift_off_2;
     wire[3:0] shift_off_4;
