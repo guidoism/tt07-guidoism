@@ -43,6 +43,7 @@ module tt_um_guidoism (
    assign uio_out = 0;  // temporarily set to 0 while I figure stuff out
    //assign address[7:0] = uo_out[7:0];
    //assign address[10:8] = 0;
+   assign uo_out = 0;  // temporarily set to 0 while I figure stuff out
    assign address = 0;  // temporarily set to 0 while I figure stuff out
    
    ////////////////////////////////////////////////////////////////
