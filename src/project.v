@@ -38,7 +38,7 @@ module tt_um_guidoism (
    wire [7:0]         data;
    wire [10:0]        address;
    wire               rnw;
-   assign data = rnw ? uio_in : uio_out;
+   assign data = rnw ? uio_out : uio_in;
    assign uio_oe = rnw;
    assign address[7:0] = uo_out[7:0];
    assign address[10:8] = 0;
