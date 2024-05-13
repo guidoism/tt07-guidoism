@@ -38,6 +38,8 @@ module tt_um_guidoism (
    wire [7:0]         data;
    wire [10:0]        address;
    wire               rnw;
+   assign uio_out = rnw ? 0 : data;
+   assign uio_in = rnw ? data : 0;
    //assign data = rnw ? uo_out : ui_in;
    //assign uio_oe = rnw;
    //assign uio_out = 0;  // temporarily set to 0 while I figure stuff out
